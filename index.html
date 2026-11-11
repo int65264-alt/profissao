@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto de Vida | Ronald - Engenheiro de Software</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="logo">&lt;Ronald<span>Dev</span>/&gt;</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+      <nav id="navMenu" class="nav-links">
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#pilares">Pilares</a>
+        <a href="#metas">Metas & Roadmap</a>
+        <a href="#habilidades">Stack Técnica</a>
+        <a href="#contato">Contato</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Alternar tema">☀️ Modo Claro</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="badge">Projeto de Vida • Carreira & Propósito</span>
+          <h1>Ronald <br /><span>Engenheiro de Software</span></h1>
+          <p class="subtitle">
+            Transformando ideias em soluções tecnológicas escaláveis, com foco em aprendizado contínuo, ética profissional e impacto positivo na sociedade.
+          </p>
+          <div class="hero-actions">
+            <a href="#metas" class="btn btn-primary">Explorar Roadmap</a>
+            <a href="#sobre" class="btn btn-outline">Minha Missão</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="code-window">
+            <div class="window-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="file-title">ronald_life_project.js</span>
+            </div>
+            <pre class="code-body"><code>const ronald = {
+  profissao: "Engenheiro de Software",
+  missao: "Criar software que resolve problemas reais",
+  valores: ["Disciplina", "Inovação", "Ética", "Colaboração"],
+  focoAtual: "Arquitetura de Sistemas & Desenvolvimento Full Stack",
+  status: "Em constante evolução 🚀"
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Identidade & Propósito</h2>
+          <p>A base que guia minhas escolhas acadêmicas, profissionais e pessoais.</p>
+        </div>
+        <div class="cards-grid three-cols">
+          <article class="card">
+            <h3>🎯 Missão</h3>
+            <p>Desenvolver sistemas seguros, eficientes e acessíveis que simplifiquem a vida das pessoas e impulsionem negócios.</p>
+          </article>
+          <article class="card">
+            <h3>🔭 Visão</h3>
+            <p>Tornar-me referência em Engenharia de Software, liderando projetos de alta complexidade e mentorando novos talentos na área de tecnologia.</p>
+          </article>
+          <article class="card">
+            <h3>💎 Valores</h3>
+            <p>Comprometimento com a qualidade do código, aprendizado contínuo, transparência, trabalho em equipe e responsabilidade social.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pilares" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2>Pilares do Projeto de Vida</h2>
+          <p>O equilíbrio necessário para sustentar uma carreira sólida na tecnologia.</p>
+        </div>
+        <div class="cards-grid four-cols">
+          <div class="pillar-card">
+            <span class="icon">🎓</span>
+            <h3>Formação Acadêmica</h3>
+            <p>Graduação em Engenharia de Software, certificações técnicas e domínio de fundamentos da computação.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="icon">💻</span>
+            <h3>Prática & Portfólio</h3>
+            <p>Construção de projetos reais, contribuição em código aberto e resolução diária de desafios lógicos.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="icon">🤝</span>
+            <h3>Soft Skills & Rede</h3>
+            <p>Comunicação clara, inteligência emocional, inglês técnico e participação ativa em comunidades dev.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="icon">⚖️</span>
+            <h3>Saúde & Equilíbrio</h3>
+            <p>Gestão de tempo, atividade física regular e bem-estar mental para manter alta performance sustentável.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="metas" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Roadmap & Metas Interativas</h2>
+          <p>Acompanhe e marque as etapas concluídas na jornada de Engenharia de Software.</p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Todas as Metas</button>
+          <button class="filter-btn" data-filter="curto">Curto Prazo</button>
+          <button class="filter-btn" data-filter="medio">Médio Prazo</button>
+          <button class="filter-btn" data-filter="longo">Longo Prazo</button>
+        </div>
+
+        <div class="progress-wrapper">
+          <div class="progress-info">
+            <span>Progresso do Plano de Vida</span>
+            <span id="progressText">0% concluído</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+
+        <div class="goals-list" id="goalsList">
+          <div class="goal-item" data-term="curto">
+            <label class="checkbox-container">
+              <input type="checkbox" class="goal-check" checked />
+              <span class="checkmark"></span>
+            </label>
+            <div class="goal-content">
+              <span class="tag tag-curto">Curto Prazo</span>
+              <h3>Dominar Fundamentos Web & Controle de Versão</h3>
+              <p>Consolidar conhecimentos em HTML5, CSS3, JavaScript moderno, Git/GitHub e lógica de programação.</p>
+            </div>
+          </div>
+
+          <div class="goal-item" data-term="curto">
+            <label class="checkbox-container">
+              <input type="checkbox" class="goal-check" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="goal-content">
+              <span class="tag tag-curto">Curto Prazo</span>
+              <h3>Construir Portfólio com Projetos Full Stack</h3>
+              <p>Desenvolver e publicar aplicações completas integrando Front-end, APIs REST e Banco de Dados.</p>
+            </div>
+          </div>
+
+          <div class="goal-item" data-term="medio">
+            <label class="checkbox-container">
+              <input type="checkbox" class="goal-check" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="goal-content">
+              <span class="tag tag-medio">Médio Prazo</span>
+              <h3>Atuar como Engenheiro de Software & Inglês Fluente</h3>
+              <p>Conquistar experiência profissional em equipes ágeis e alcançar fluência para atuar em projetos globais.</p>
+            </div>
+          </div>
+
+          <div class="goal-item" data-term="medio">
+            <label class="checkbox-container">
+              <input type="checkbox" class="goal-check" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="goal-content">
+              <span class="tag tag-medio">Médio Prazo</span>
+              <h3>Especialização em Arquitetura e Cloud Computing</h3>
+              <p>Aprofundar estudos em microsserviços, testes automatizados, DevOps e computação em nuvem.</p>
+            </div>
+          </div>
+
+          <div class="goal-item" data-term="longo">
+            <label class="checkbox-container">
+              <input type="checkbox" class="goal-check" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="goal-content">
+              <span class="tag tag-longo">Longo Prazo</span>
+              <h3>Liderança Técnica (Tech Lead / Arquiteto)</h3>
+              <p>Liderar decisões arquiteturais estratégicas, empreender ou criar produtos digitais de alto impacto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2>Competências em Desenvolvimento</h2>
+          <p>Áreas técnicas e comportamentais que compõem minha formação.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h4>Front-end & UI</h4>
+            <div class="tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript ES6+</span><span>Responsividade</span><span>Acessibilidade</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <h4>Back-end & Dados</h4>
+            <div class="tags">
+              <span>Node.js</span><span>Python</span><span>APIs REST</span><span>SQL & NoSQL</span><span>Segurança</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <h4>Engenharia & DevOps</h4>
+            <div class="tags">
+              <span>Git & GitHub</span><span>Clean Code</span><span>Metodologias Ágeis</span><span>Testes</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container contact-box">
+        <div>
+          <h2>Vamos Conectar?</h2>
+          <p>Deixe uma mensagem, feedback ou sugestão sobre meu Projeto de Vida na Engenharia de Software.</p>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="nome" placeholder="Seu nome" required />
+          <input type="email" id="email" placeholder="Seu e-mail" required />
+          <textarea id="mensagem" rows="4" placeholder="Sua mensagem..." required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+          <p id="formFeedback" class="form-feedback"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="currentYear"></span> Ronald — Projeto de Vida: Engenheiro de Software. Desenvolvido com HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
